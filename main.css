@@ -1,0 +1,161 @@
+.gradient-header {
+    background: linear-gradient(90deg, #32af82, #9e6cd4); /* تدرج لوني */
+    color: white;}
+    
+    .professional-animated-background {
+        background: linear-gradient(45deg, #9441c1, #33b661, #168723);
+        background-size: 400% 400%;
+        animation: gradientAnimation 2s ease infinite, fadeOut 5s ease forwards;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem; /* قم بتكبير حجم الخط هنا */
+        position: fixed; /* Ensures it covers the whole screen */
+        width: 100%;
+        z-index: 9999; /* Makes it appear above other elements */
+        text-align: center;
+    }
+    
+    .word {
+        display: inline-block; /* Ensures smooth animations */
+        opacity: 0; /* Start hidden */
+        transform: translateY(20px); /* Start slightly below */
+        animation: fadeInUp 1s ease forwards;
+    }
+    
+    .word1 {
+        animation-delay: 0s; /* "اهلا" يظهر مباشرة */
+    }
+    
+    .word2 {
+        animation-delay: 2s; /* "بالعالم" يظهر بعد ثانيتين */
+    }
+    
+    /* Animation for text */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Keyframe for the gradient animation */
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    
+    
+    .custom-icon {
+      /*  font-size: 150px; /* حجم الأيقونة */
+        color: #8428c1; /* اللون الأساسي */
+        transition: all 0.3s ease; /* حركة سلسة */
+    }
+    
+    .custom-icon:hover {
+        color: #24a82d; /* لون جديد عند التمرير */
+        transform: scale(1.2); /* تكبير الأيقونة عند التمرير */}
+
+        body{
+            font-family:Almarai ;
+        }
+        
+        .card .read-more:hover{
+            font-size: 14px;
+        }
+        .card {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #ddd; /* للتأكد أن البطاقة مرئية بوضوح */
+        }
+        
+        .card:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 255, 0, 0.5), rgba(163, 30, 163, 0.5));
+            z-index: -1;
+            filter: blur(10px);
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        /* تحسين شكل الفورم */
+form {
+    background: linear-gradient(135deg, #32af82, #6b42c1); /* تدرج لوني للخلفية */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    color: white; /* لون النص */
+    font-size: 1.1rem; /* تكبير النص */
+}
+
+/* تحسين الحقول */
+form .form-control {
+    background-color: #f8f9fa; /* خلفية فاتحة */
+    border: 1px solid #ced4da; /* حواف خفيفة */
+    border-radius: 10px; /* زوايا مدورة */
+    padding: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease; /* حركة سلسة عند التركيز */
+}
+
+/* تغيير الحقل عند التركيز */
+form .form-control:focus {
+    border-color: #6b42c1; /* لون عند التركيز */
+    box-shadow: 0 0 10px rgba(107, 66, 193, 0.5); /* إضافة ظل */
+}
+
+/* تحسين زر التسجيل */
+form button {
+    background: linear-gradient(90deg, #32af82, #6b42c1); /* تدرج ألوان */
+    color: white; /* لون النص */
+    font-size: 1.2rem; /* تكبير الخط */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* حركة سلسة */
+}
+
+/* تأثير عند تمرير الماوس فوق الزر */
+form button:hover {
+    background: linear-gradient(90deg, #6b42c1, #32af82); /* عكس التدرج */
+    transform: scale(1.05); /* تكبير خفيف */
+}
+
+/* محاذاة النص */
+form label {
+    font-weight: bold; /* نص عريض */
+    margin-bottom: 10px;
+}
+
+/* محاذاة الحاوية */
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* تحسين العناوين */
+h1 {
+    font-size: 2rem;
+    background: -webkit-linear-gradient(#32af82, #6b42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* نص متدرج */
+    margin-bottom: 30px;
+}
