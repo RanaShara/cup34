@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
     <title>world in saudi 2034</title>
 </head>
 <body dir="rtl">
@@ -46,10 +48,11 @@
                           <div class="card-body">
                              <div class="row">
                                  <div class="col text-center d-flex justify-content-center align-items-center">
+                                    <a href="stadiums.html">
                                     <h3 class="text-success">الملاعب</h3>
                                  </div>
                                  <div class="col text-start">
-                                    <a href="stadiums.html">
+                                    
                                      <i class="fa fa-futbol-o custom-icon" aria-hidden="true" style="font-size: 100px;"></i>
                                     </a>
                                  </div>
@@ -62,24 +65,30 @@
                              <div class="card-body">
                                  <div class="row">
                                      <div class="col">
+                                        <a href="matches.html">
                                          <h3 class="text-success">جدول المباريات</h3>
                                      </div>
+                                    
                                      <div class="col text-start">
+                                        
                                          <i class="fa fa-clock-o custom-icon" aria-hidden="true" style="font-size: 100px;"></i>
+                                     </a>
                                      </div>
                                  </div>
                              </div>
                          </div>
                      </div>
                      <div class="col">
-                         <div class="card">
+                         <div class="card ">
                              <div class="card-body">
                                  <div class="row">
                                      <div class="col">
+                                        <a href="hotels.html">
                                        <h3 class="text-success">الفنادق</h3>
                                      </div>
                                      <div class="col text-start">
                                          <i class="fa fa-bed custom-icon" aria-hidden="true" style="font-size: 100px;"></i>
+                                        </a>
  
                                      </div>
                                  </div>
@@ -91,10 +100,12 @@
                              <div class="card-body">
                                  <div class="row">
                                      <div class="col">
+                                        <a href="transportation.html" style="text-decoration: none; color: inherit;">
                                        <h3 class="text-success">النقل</h3>
                                      </div>
                                      <div class="col text-start">
                                          <i class="fa fa-car custom-icon" aria-hidden="true"  style="font-size: 100px;"></i>
+                                        </a>
  
                                      </div>
                                  </div>
@@ -102,15 +113,63 @@
                          </div>
                      </div>
                  </div>
+                 <div class="card leader-card mt-5 mx-auto" style="max-width: 600px;">
+                    <div class="card-body">
+                        <div class="row align-items-center" id="leader-section">
+                            <div class="col-md-5 text-center">
+                                <img src="images/mohammed-bin-salman.jpg" 
+                                     alt="محمد بن سلمان" 
+                                     class="leader-img">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="leader-title">رؤية محمد بن سلمان</h3>
+                                <p class="leader-text">
+                                    تحت قيادة ولي العهد الأمير محمد بن سلمان، تمكنت المملكة العربية السعودية من تحقيق قفزات كبيرة على الساحة الدولية. 
+                                    بفضل رؤية 2030، أصبحت السعودية مركزًا عالميًا للرياضة والثقافة. وكانت الجهود الحثيثة للأمير في تطوير البنية التحتية 
+                                    واستضافة الفعاليات الكبرى سببًا رئيسيًا في فوز المملكة بحق استضافة كأس العالم 2034.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+
+
              </div>
            </div>
         </div>
+        
+    </main>
+
 <script>
     setTimeout(() => {
         document.querySelector('.professional-animated-background').style.display = 'none';
         document.querySelector('main').style.display = 'block';
     }, 6000);
 </script>
+
+<script>
+    // تحقق من ظهور العنصر في الشاشة
+    document.addEventListener("scroll", function () {
+        const section = document.getElementById("leader-section");
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            section.classList.add("visible");
+        }
+    });
+</script>
+
+<footer class="transparent-footer">
+    <div class="container">
+        <p>
+            <span>RanaShara</span> © 2025. All rights reserved.
+        </p>
+    </div>
+</footer>
 
 
 

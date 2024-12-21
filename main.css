@@ -155,7 +155,170 @@ form label {
 h1 {
     font-size: 2rem;
     background: -webkit-linear-gradient(#32af82, #6b42c1);
-    -webkit-background-clip: text;
+   
     -webkit-text-fill-color: transparent; /* نص متدرج */
     margin-bottom: 30px;
+}
+/* تحسين شكل الكروت الخاصة بالملاعب */
+.stadium-card {
+    background: linear-gradient(135deg, #ffffff, #e3f2fd); /* خلفية الكرت */
+    border: none; /* إزالة الحواف الافتراضية */
+    border-radius: 15px; /* زوايا مدورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    overflow: hidden; /* لمنع تجاوز الصور حدود الكرت */
+    transition: all 0.3s ease-in-out; /* حركة سلسة */
+}
+
+/* تحسين صورة الكرت */
+.stadium-card img {
+    width: 100%; /* ملء العرض */
+    height: 200px; /* تحديد الارتفاع */
+    object-fit: cover; /* الحفاظ على تناسب الصورة */
+}
+
+/* تحسين النصوص داخل الكرت */
+.stadium-card .card-body {
+    padding: 15px;
+}
+
+.stadium-card h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.stadium-card p {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+/* تأثير عند التمرير على الكرت */
+.stadium-card:hover {
+    transform: scale(1.05); /* تكبير بسيط */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* زيادة الظل */
+}
+/* تحسين شكل الجدول */
+/* تحسين الجدول */
+.table {
+    font-family: 'Almarai', sans-serif;
+    font-size: 1.1rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.table thead {
+    background-color: #32af82;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.table tbody tr {
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #e9f5e9;
+}
+
+.table tbody tr:hover {
+    background-color: #d4f1d0;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* تحسين الخلايا */
+.table td, .table th {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* آخر صف بدون حدود */
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* تأثير تلوين الخلايا عند التأشير */
+.table tbody td:hover {
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.5), rgba(163, 30, 163, 0.5));
+    transition: background-color 0.3s ease;
+}
+
+/* تحسين ظهور كلمة "جدول المباريات" */
+.card-body h3 {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}/* تصميم الكرت */
+.leader-card {
+    background: linear-gradient(45deg, #9441c1, #33b661, #168723);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* تصميم الفقرة والصورة داخل الكرت */
+.leader-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.leader-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #306f34;
+    font-weight: bold;
+    text-align: right;
+}
+
+.leader-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e9e9e9;
+    text-align: right;
+}
+.transparent-footer {
+    background-color: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
+    color: #000000; /* نص أبيض */
+    text-align: center;
+    padding: 20px 0; /* مسافة عمودية */
+    font-size: 0.9rem; /* حجم النص صغير لكن واضح */
+    font-family: 'Almarai', sans-serif; /* الخط المستخدم */
+    backdrop-filter: blur(5px); /* تأثير تمويه */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* خط علوي شفاف */
+}
+
+.transparent-footer span {
+    font-weight: bold;
+    color: #000000; /* لون ذهبي مميز */
+}
+
+.transparent-footer p {
+    margin: 0; /* إزالة الهوامش */
+    opacity: 0.8; /* نص خفيف */
+}
+
+.transparent-footer p:hover {
+    opacity: 1; /* يزيد الوضوح عند التمرير */
 }
